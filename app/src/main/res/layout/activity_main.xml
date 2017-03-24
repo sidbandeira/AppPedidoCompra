@@ -15,7 +15,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dados do Fornecedor"
-        android:id="@+id/txtTitulo"/>
+        android:id="@+id/txtTitulo"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_orange_light" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,17 +40,17 @@
         android:layout_below = "@+id/edtFornecedor">
 
         <TextView
-            android:id="@+id/txtData"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data:"
-            android:layout_weight="1"/>
+        android:id="@+id/txtData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data:"
+        android:layout_weight="1"/>
 
         <TextView
             android:id="@+id/txtPagamento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Data:"
+            android:text="Pagamento:"
             android:layout_weight="2"/>
 
     </LinearLayout>
@@ -58,17 +61,17 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/edtData"
-            android:layout_width="128dp"
+            android:layout_width="114dp"
             android:layout_height="wrap_content"
-            android:layout_below = "@+id/txtData" />
-
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/edtData" />
 
         <EditText
             android:id="@+id/edtPagamento"
-            android:layout_width="match_parent"
+            android:layout_width="279dp"
             android:layout_height="wrap_content"
-            android:layout_below = "@+id/txtPagamento"
+            android:layout_below = "@+id/edtPagamento"
             android:layout_weight="2"/>
 
     </LinearLayout>
